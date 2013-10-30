@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+<script type="text/javascript" src="suma.js"></script>
+ <style type="text/css">
+	fieldset{
+		margin-left: 37%;
+		width: 20%;
+		margin-top: 10%;
+	}
+	[required]{
+		border-color: transparent;
+		box-shadow: 0px 0px 5px blue;
+	}
+
+	</style>
+</head>
+<body>
+	<fieldset>
+	<label>Numero 1</label><input type="text" id="n1" onkeyUp="return ValNumero(this);" value="" required>
+	<label>Numero 2</label><input type="text" id="n2" onkeyUp="return ValNumero(this);" required><br/>
+	<label>Operaciones</label><br/>
+	<input type="button" id="btn1" value="+" required>
+	<input type="button" id="btn2" value="-" >
+	<input type="button" id="btn3" value="/" >
+	<input type="button" id="btn4" value="*" ><br/>
+	<label>Resultado</label><br/>
+	<input type="text" value="" id="res">
+	</fieldset>
+</body>
+</html>
